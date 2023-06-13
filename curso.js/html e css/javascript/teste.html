@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form">
+      <p>Nome:<input type="text" class="nome" /></p>
+      <p>sobrenome:<input type="text" class="sobrenome" /></p>
+      <p>Peso:<input type="text" class="peso" /></p>
+      <p>Altura:<input type="text" class="altura" /></p>
+      <button>Enviar</button>
+    </form>
+
+    <div class="resultado"></div>
+
+    <script>
+      function meuEscopo() {
+        const form = document.querySelector(".form");
+        const nome = document.querySelector(".nome");
+        const sobrenome = document.querySelector(".sobrenome");
+        const peso = document.querySelector(".peso");
+        const altura = document.querySelector(".altura");
+        const resultado = document.querySelector(".resultado");
+
+        form.addEventListener("submit", (evento) => {
+          evento.preventDefault();
+
+          let pessoas = [];
+
+          pessoas.push({
+            nome: nome.value,
+            sobrenome: sobrenome.value,
+            peso: peso.value,
+            altura: altura.value,
+          });
+
+          console.log(pessoas);
+
+          resultado.innerHTML = `<p>${nome.value} ${sobrenome.value} ${peso.value} ${altura.value}</p>`;
+        });
+      }
+
+      meuEscopo();
+    </script>
+  </body>
+</html>
