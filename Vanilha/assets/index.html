@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Vanilha</title>
+</head>
+<body>
+    <h1>Vanilha-Js</h1>
+
+    <img id="lamp" src="img/apagada.jpg" onclick="lampada(1)" onmouseout="lampada(3)" onmousemove="lampada(2)">
+
+    <button id="ligado">Ligar</button>
+    <button id="desligado">Desligar</button>
+
+
+    <script>
+
+        const lamp = document.querySelector("#lamp");
+
+        function lampada(tipo) {
+            if (tipo === 1 )
+            lamp.src = "img/quebrada.jpg";
+
+            if (tipo === 2 && !isBroken())
+            lamp.src = "img/acessa.jpg";
+
+            if (tipo === 3 && !isBroken())
+            lamp.src = "img/apagada.jpg"
+        }
+
+        function isBroken() {
+            return lamp.src.indexOf("quebrada") > -1;
+        }
+    </script>
+</body>
+</html>
