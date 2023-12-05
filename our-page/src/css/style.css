@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    
+}
+
+:root {
+    --white-color: #F5F5F5;
+    --black-color: #222831;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: Open Sans;
+}
+
+h1, h2, h3 {
+    font-family: Hepta Slab;
+}
+
+h2 {
+    line-height: 1.2;
+    margin-bottom: 5rem;
+    /* min-width: 500px; */
+}
+
+.space {
+    height: 6.5rem;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.main-bg {
+    background-color: var(--black-color);
+    color: #fff;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    z-index: 1;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem 3rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu-content a img {
+   display: flex;
+    
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.menu ul li a::after {
+    position: absolute;
+    content: "";
+    height: 0.2rem;
+    width: 0;
+    bottom: 1.7rem;
+    background-color: crimson;
+    left: 50%;
+    transition: all 200ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+} 
+
+.init h2 {
+    font-size: 6rem;
+}
+
+
+.init {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+}
+
+.text-init, .text-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.text-img img {
+    width: 100%;
+    height: auto;
+}
+
+.inicio h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.inicio p {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    
+}
+
+.inicio .text-img {
+    width: 80%;
+    margin-left: 5rem;
+} 
+
+ /* parte do afro */
+
+ .afro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 81rem;
+    line-height: 1.1;
+    gap: 5rem;
+ }
+
+ .afro-img {
+   margin-right: 65rem;
+ padding: 3rem;
+   
+ }
+
+ .cultura h2, .tradicoes h2, .habitos h3 {
+    margin-bottom: 8rem;
+    font-weight: 400;
+    font-family: Open Sans;
+ }
+
+
+ .tradicoes h3, .habitos h3{
+    text-align: left;
+    font-family: Open Sans;
+    font-weight: 200;
+    margin-bottom: 2.3rem;
+ }
+
+ .gallery{
+    display: flex;
+    gap: 3.5rem;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .gallery img {
+    margin-top: 10rem;
+ }
+
+.receitas{
+margin: 3rem;
+
+}
+
+.culinaria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  text-align: center;
+    gap: 3rem;
+    max-width: 80rem;
+}
+
+.culinaria ul {
+    /* list-style: none; */
+    text-align: left;
+    margin-left: 4rem
+}
+
+ .culinaria h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+ }
+
+ .escravos{
+    margin: 3rem;
+ }
+
+
+ /* parte-pogguers */
+
+ .afro1 {
+    transition: all 200ms ease-in-out;
+ }
+
+ .afro1 img {
+    border: 0.4rem white solid;
+ }
+
+ .afro1:hover {
+    transform: scale(1.1);
+    
+ }
+
+ .afro2 {
+    transition: all 200ms ease-in-out;
+ }
+
+
+ .afro2 img {
+    border: 0.4rem white solid;
+ }
+
+ .afro2:hover {
+    transform: scale(1.1);
+    
+ }
+
+ .afro3 {
+    transition: all 200ms ease-in-out;
+ }
+
+
+ .afro3 img {
+    border: 4px white solid;
+ }
+
+ .afro3:hover {
+    transform: scale(1.1);
+    
+ }
+
+ .dance{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7rem;
+ }
+
+ .dance-img img {
+    width: 100%;
+    height: auto;
+ }
+
+ .dance-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+ }
+
+
+ .japa {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    text-align: center;
+    align-items: center;
+    gap: 6rem;
+ }
+
+ .japa-images {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    
+ }
+
+ .japa-images img {
+    transition: all 200ms ease-in-out;
+ }
+
+ .japa-images img:hover {
+    transform: scale(1.1);
+ }
+
+
+
+ .japa-text {
+   margin-bottom: 9rem;
+ }
+
+
+ .ultimo {
+    position: relative;
+ }
+
+ .ultimo img {
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+ }
+
+.comida {
+    margin-top: 9rem;
+}
+
+.japa-dance img{
+    margin-top: 9rem;
+}
+
+.indio {
+    display: flex;
+    flex-direction: column;
+    max-width: 66rem;
+}
+
+.indio h2 {
+    text-align: center;
+}
+
+.white-bg {
+    background-color: white;
+    color: black;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pelinho {
+    margin-right: 16rem;
+}
+
+.redes {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.vazio {
+    height: 5rem;
+    width: 5rem;
+}
+
+@media (max-width:750px) {
+    .inicio, .init, .dance, .japa, .japa-images {
+        grid-template-columns: 1fr;
+    }
+
+    .ultimo img{
+        position: initial;
+
+    }
+
+    h1 {
+        font-size: 4rem;
+      }
+    
+      h2 {
+        font-size: 3.6rem;
+      }
+    
+      h3 {
+        font-size: 3.4rem;
+      }
+
+      html {
+        overflow-x: hidden;
+      }
+
+.afro-img {
+   display: none;
+  
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.afro-img 
+
+.gallery img {
+    width: 36rem;
+    height: 36rem;
+}
+}
+
+@media (max-width:780px) {
+    .inicio, .init, .dance, .japa, .japa-images {
+        grid-template-columns: 1fr;
+    }
+
+    .ultimo img{
+        position: initial;
+
+    }
+
+    h1 {
+        font-size: 4rem;
+      }
+    
+      h2 {
+        font-size: 3.6rem;
+      }
+    
+      h3 {
+        font-size: 3.4rem;
+      }
+
+      html {
+        overflow-x: hidden;
+      }
+
+.afro-img {
+   display: none;
+  
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.afro-img 
+
+.gallery img {
+    width: 36rem;
+    height: 36rem;
+}
+}
+
+@media (max-width:750px) {
+    body {
+       
+    }
+}
